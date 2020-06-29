@@ -1,21 +1,33 @@
 import React from "react";
+import { graphql } from "gatsby";
+
 import Layout from "../components/layout";
 
-const Blog = () => (
+export const AllBlogsQuery = graphql`
+  query AllBlogPosts {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+        }
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            date
+          }
+        }
+      }
+    }
+  }
+`;
+
+const Blog = ({ data }) => (
   <Layout>
     <h1>Blog</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-      aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-      accusantium, est nostrum esse minus iure voluptatum nihil cumque
-      blanditiis non? Odit.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
-      aut consequuntur aspernatur corrupti ratione, odit similique tenetur
-      accusantium, est nostrum esse minus iure voluptatum nihil cumque
-      blanditiis non? Odit.
-    </p>
+    {console.log(data)}
   </Layout>
 );
 
