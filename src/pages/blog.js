@@ -2,21 +2,19 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
+import Post from "../components/post";
 
 export const AllBlogsQuery = graphql`
   query AllBlogPosts {
     allMarkdownRemark {
       edges {
         node {
-          id
-        }
-      }
-    }
-    allMarkdownRemark {
-      edges {
-        node {
           frontmatter {
             date
+            title
+            description
+            author
+            path
           }
         }
       }
@@ -27,7 +25,20 @@ export const AllBlogsQuery = graphql`
 const Blog = ({ data }) => (
   <Layout>
     <h1>Blog</h1>
-    {console.log(data)}
+    {data.allMarkdownRemark.edges.map(post => {
+      const { title, author, date, description, path } = post.node.frontmatter;
+
+      return (
+        <Post
+          key={`${date}__${title}`}
+          title={title}
+          author={author}
+          date={date}
+          description={description}
+          path={path}
+        />
+      );
+    })}
   </Layout>
 );
 
