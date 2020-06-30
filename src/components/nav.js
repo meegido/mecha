@@ -7,18 +7,24 @@ const Nav = () => (
   <nav className="nav">
     <ul className="nav-list">
       <li className="nav-list-item">
-        <Link activeStyle={{ borderBottom: "2px solid #a64ac9" }} to="/">
+        <Link
+          activeStyle={{ borderBottom: "2px solid rgb(55, 43, 34)" }}
+          to="/"
+        >
           Home
         </Link>
       </li>
       <li className="nav-list-item">
-        <Link activeStyle={{ borderBottom: "2px solid #a64ac9" }} to="/about">
+        <Link
+          activeStyle={{ borderBottom: "2px solid rgb(55, 43, 34)" }}
+          to="/about"
+        >
           About
         </Link>
       </li>
       <li className="nav-list-item">
         <Link
-          activeStyle={{ borderBottom: "2px solid #a64ac9" }}
+          activeStyle={{ borderBottom: "2px solid rgb(55, 43, 34)" }}
           to="/experiments"
         >
           Experiments

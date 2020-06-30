@@ -6,10 +6,10 @@ body {
 }
 
 .main {
-  padding: 24px;
+  padding: 24px 24px 24px 58px;
   font-family: -apple-system, "Raleway", sans-serif;
   height: 100%;
-  color: grey;
+  color: rgb(55, 43, 34);
   line-height: 1.4;
   letter-spacing: 2px;
 }
@@ -18,10 +18,16 @@ body {
   font-size: 4em;
   font-family: -apple-system, "Playfair Display", serif;
   font-weight: 400;
+  color: rgb(53, 67, 142);
 }
 
 .main p {
   font-size: 1.5em;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 1px;
+  width: 50%;
+}
+
+.main div:nth-child(2) {
+  padding-top: 40px;
 }
