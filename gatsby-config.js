@@ -32,8 +32,20 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Raleway`,
+            variants: [200, 300, 400, 500, 600, 700],
+          },
+          {
+            family: `Playfair Display`,
+            variants: [400, 500, 600, 700],
+          },
+        ],
+      },
+    },
   ],
 };
