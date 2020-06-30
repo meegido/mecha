@@ -7,21 +7,12 @@ import Post from "../components/post";
 const Home = ({ data }) => (
   <Layout>
     <div className="home-intro">
-      <h1
-        style={{
-          maxWidth: `300px`,
-          marginBottom: `.1rem`,
-          marginTop: `.2rem`,
-          fontSize: `100px`,
-        }}
-      >
-        Mecha
-      </h1>
+      <h1>Mecha</h1>
       <p
         style={{
           borderBottom: `2px solid rgb(197, 96, 48)`,
           paddingBottom: `25px`,
-          margin: `0`
+          margin: `0`,
         }}
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos
