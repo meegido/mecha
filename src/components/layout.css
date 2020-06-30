@@ -8,9 +8,8 @@ body {
 .main {
   padding: 24px;
   font-family: -apple-system, "Raleway", sans-serif;
-  background-color: #a64ac9;
   height: 100%;
-  color: #ffffff;
+  color: grey;
   line-height: 1.4;
   letter-spacing: 2px;
 }

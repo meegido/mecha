@@ -1,10 +1,12 @@
 .nav {
-  padding: 24px;
+  padding: 40px 20px;
+  width: 100%;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +14,7 @@
 .nav-list-item {
   margin-right: 24px;
   font-family: "Raleway", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .nav-list a {

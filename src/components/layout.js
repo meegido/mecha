@@ -8,13 +8,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Nav from "./nav";
+import Header from "./header";
 import "./layout.css";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Nav />
+      <Header />
       <main className="main">{children}</main>
     </div>
   );
