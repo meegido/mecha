@@ -1,13 +1,18 @@
 import PropTypes from "prop-types";
 import React from "react";
-import Nav from "./nav";
+import { Link } from "gatsby";
+
 import "./header.css";
+import Nav from "./nav";
 
 import Mecha from "../images/fire.svg";
 
 const Header = () => (
   <header className="header">
-    <Mecha className="mo-fire" />
+    <Link to="/">
+      <Mecha className="mo-fire" />
+    </Link>
+
     <Nav />
   </header>
 );
