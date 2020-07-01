@@ -11,3 +11,31 @@
   border-radius: 54px;
   margin-bottom: 20px;
 }
+
+.image-wrapper {
+  width: 70%;
+}
+
+.image-wrapper.hue {
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+
+.image-wrapper.blur {
+  filter: blur(10px);
+}
+
+.image-wrapper.saturate {
+  -webkit-filter: saturate(8);
+  filter: saturate(8);
+}
+
+.image-wrapper.invert {
+  -webkit-filter: invert(0.8);
+  filter: invert(0.9);
+}
+
+.image-wrapper.contrast {
+  -webkit-filter: contrast(4);
+  filter: contrast(4);
+}
