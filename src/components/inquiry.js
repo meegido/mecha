@@ -16,8 +16,15 @@ const Inquiry = () => (
   <div className="inquiry">
     <h1>Filtros e imagenes </h1>
     <div className="circle"></div>
-    <div className="image-wrapper" onMouseOver={changeFilter}>
-      <Image className="" />
+    <div className="wrapper">
+      <div className="image-wrapper" onMouseOver={changeFilter}>
+        <div className="image">
+          <Image />
+        </div>
+        <div className="image">
+          <Image />
+        </div>
+      </div>
     </div>
   </div>
 );

@@ -1,3 +1,9 @@
+.inquiry {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+}
+
 .inquiry h1 {
   font-size: 3em;
   letter-spacing: 1px;
@@ -9,11 +15,26 @@
   height: 100px;
   background: red;
   border-radius: 54px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .image-wrapper {
-  width: 70%;
+  width: 100%;
+  display: flex;
+}
+
+.wrapper .image-wrapper .image {
+  flex: 1;
+}
+
+.wrapper .image-wrapper .image:nth-child(1) {
+  margin-right: 40px;
 }
 
 .image-wrapper.hue {
