@@ -31,6 +31,6 @@ body {
   width: 50%;
 }
 
-.main div:nth-child(2) {
+.home-post-list {
   padding-top: 40px;
 }

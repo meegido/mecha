@@ -1,5 +1,7 @@
 .blogTemplate .blogTemplate-title {
-  margin: 80px 0 24px;
+  margin: 40px 0 24px;
+  font-size: 4em;
+  letter-spacing: 1px;
 }
 
 .blogTemplate .blogTemplate-posted-by {
@@ -7,5 +9,5 @@
 }
 
 .blogTemplate a {
-  color: #fff;
+  color: rgb(253, 186, 22);
 }

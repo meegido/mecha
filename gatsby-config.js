@@ -17,6 +17,10 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/pages`,
       },
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

@@ -1,5 +1,7 @@
 import React from "react";
+
 import Layout from "../components/layout";
+import Inquiry from "../components/inquiry";
 
 const Experiments = () => (
   <Layout>
@@ -10,6 +12,7 @@ const Experiments = () => (
       accusantium, est nostrum esse minus iure voluptatum nihil cumque
       blanditiis non? Odit.
     </p>
+    <Inquiry />
   </Layout>
 );
 

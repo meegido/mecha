@@ -1,0 +1,13 @@
+.inquiry h1 {
+  font-size: 3em;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 54px;
+  margin-bottom: 20px;
+}

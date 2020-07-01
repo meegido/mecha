@@ -1,7 +1,7 @@
 .post {
-  margin-bottom: 80px;
-  padding-bottom: 80px;
-  border-bottom: 2px solid grey;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgb(53, 67, 142);
 }
 
 .post .post-title {
@@ -13,7 +13,8 @@
 }
 
 .post .post-description {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  margin-top: 0.4em;
 }
 
 .post .post-written-by {
@@ -22,8 +23,10 @@
 
 .post a {
   background-color: white;
-  color: #a64ac9;
-  padding: 16px 24px;
+  color: rgb(53, 67, 142);
+  border: 1px solid rgb(253, 186, 22);
+  border-radius: 23px;
+  padding: 14px 17px;
   text-decoration: none;
   margin-top: 16px;
   display: inline-block;
